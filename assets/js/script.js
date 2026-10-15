@@ -51,8 +51,8 @@ function distanzaDa19(n) {
   }
   return distanza;
 }
-console.log(distanzaDa19(5)); // 14
-console.log(distanzaDa19(25)); // 18
+console.log(distanzaDa19(5)); 
+console.log(distanzaDa19(25)); 
 
 /* ESERCIZIO 4 — dentroIntervallo
    Funzione dentroIntervallo(n):
@@ -60,6 +60,15 @@ console.log(distanzaDa19(25)); // 18
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function dentroIntervallo(n) {
+  return (n >= 20 && n <= 100) || n === 400 || n >=301 && n <=399
+}
+console.log(dentroIntervallo(20)); // true
+console.log(dentroIntervallo(100)); // true
+console.log(dentroIntervallo(300)); // false
+console.log(dentroIntervallo(400)); // true
+
 
 /* ESERCIZIO 5 — epify
    Funzione epify(testo): aggiunge "EPICODE " davanti.
